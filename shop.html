@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Shop MicLab - Microphones, Headphones, Audio Interfaces & Accessories</title>
+  <meta name="description" content="Shop the complete collection of premium music gear at MicLab. Find the best microphones, studio headphones, audio interfaces and audio accessories in Pakistan.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="top-container topbar-content">
+        <p>Free shipping. 30-day return or refund guarantee.</p>
+        <div class="topbar-buttons">
+          <a href="cart.html" class="top-btn">Track Order</a>
+          <a href="contact.html" class="top-btn">Support</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar container">
+      <div class="nav-brand">
+        <i class="fa-solid fa-microphone brand-icon"></i>
+        <a href="index.html" class="brand-name">MicLab</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="shop.html">Shop</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbarMenu">
+        <div class="nav-cart">
+          <a href="cart.html" class="nav-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        <div class="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile-nav-links" id="mobileMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html" class="link-active">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Start Shop Section -->
+  <section id="shop-hero" class="page-hero">
+    <div class="container shop-hero-content">
+      <span class="hero-pre">MICLAB COLLECTION</span>
+      <h1 class="page-heading">The Best Gear for Every Creator</h1>
+      <p class="page-paragraph">Explore our full range of professional microphones, headphones, and recording accessories, all backed by MicLab's quality guarantee.</p>
+    </div>
+  </section>
+  <section id="shop-products">
+    <div class="container">
+        <div class="filter-bar">
+            <div class="bar-content-lt">
+                <i class="fa-solid fa-microphone"></i>
+                <a href="index.html">MicLab</a>
+            </div>
+            <div class="filter-group">
+                <label for="category-select"><i class="fa-solid fa-filter"></i> Category:</label>
+                <select id="category-select" class="shop-select">
+                    <option value="all">All Products</option>
+                    <option value="microphone">Microphones</option>
+                    <option value="headphone">Headphones</option>
+                    <option value="interface">Audio Interfaces</option>
+                    <option value="monitor">Studio Monitors</option>
+                    <option value="midi">Midi Keyboard</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="productContainer" class="shop-grid"></div>
+        <template id="productTemplate">
+            <div class="cards" id="cardValue">
+            <article class="information [card]">
+                <!-- Product Image -->
+                <div class="imageContainer">
+                <img src="" alt="" class="productImage" loading="lazy">
+                </div>
+                <!-- Card Typrography -->
+                <div class="cardTypography">
+                <!-- Product Name -->
+                <h3 class="productName"></h3>
+                <!-- Product Rating -->
+                <div class="productRating">
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                    <i class="fa-solid fa-star star"></i>
+                </div>
+                <!-- Product Description -->
+                <!-- <p class="productDescription"></p> -->
+                <!-- Product Price -->
+                <div class="productPriceElement">
+                    <p class="productPrice"></p>
+                    <p class="productActualPrice"></p>
+                </div>
+                <!-- Product Stocks Element -->
+                <div class="productStockElement">
+                    <p class="productProperty">Total Stocks Available:</p>
+                    <p class="productStock"></p>
+                </div>
+                <!-- Product Quantity Element -->
+                <div class="productQuantityElement">
+                    <p class="productProperty">Quantity:</p>
+                    <div class="stockElement">
+                    <button class="cartIncreament"><i class="fa-solid fa-plus"></i></button>
+                    <p class="productQuantity">1</p>
+                    <button class="cartDecreament"><i class="fa-solid fa-minus"></i></button>
+                    </div>
+                </div>
+                <!-- Product Cart Button -->
+                <button class="add-to-cart-button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Add To Cart</span>
+                </button>
+                </div>
+            </article>
+            </div>
+        </template>
+    </div>
+  </section>
+  <!-- End Shop Section -->
+
+  <!-- Start Products Section -->
+  <!-- <section id="products">
+    <section class="container">
+      <div id="productContainer"></div>
+    </section>
+  </section> -->
+
+  
+  <!-- End Products Section -->
+
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <i class="fa-solid fa-microphone"></i>
+          <span>MicLab</span>
+        </div>
+        <p>Premium music gear for creators. Quality you can trust.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MicLab. All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

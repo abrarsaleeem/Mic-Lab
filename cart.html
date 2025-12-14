@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>MicLab Cart - Review & Checkout Your Orders</title>
+  <meta name="description" content="View the items in your cart at MicLab. Update quantities, remove products, and proceed to a secure checkout for premium audio gear in Pakistan.">
+  <!-- Link Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+  <!-- Link Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <!-- Start Navbar Section -->
+  <header id="header">
+    <!-- Top Info Bar -->
+    <div class="topbar">
+      <div class="top-container topbar-content">
+        <p>Free shipping. 30-day return or refund guarantee.</p>
+        <div class="topbar-buttons">
+          <a href="cart.html" class="top-btn">Track Order</a>
+          <a href="contact.html" class="top-btn">Support</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navbar -->
+    <nav class="navbar container">
+      <!-- Brand -->
+      <div class="nav-brand">
+        <i class="fa-solid fa-microphone brand-icon"></i>
+        <a href="index.html" class="brand-name">MicLab</a>
+      </div>
+      <!-- Desktop-Links -->
+      <div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="shop.html">Shop</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Navbar Menu Area -->
+      <div class="navbarMenu">
+        <!-- Mobile Cart (visible on small screens) -->
+        <div class="nav-cart">
+          <a href="cart.html" class="nav-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <!-- Mobile Menu Dropdown -->
+        <div class="mobile-nav-links" id="mobileMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- End Navbar Section -->
+
+  <!-- Start Products Cart Section -->
+  <section class="cartElements">
+    <div class="container cart-layout">
+      <section>
+        <div id="productCartContainer"></div>
+      </section>
+      <!-- Total Section -->
+      <section class="totalElement">
+        <div class="productTotalElements">
+          <p class="summary-headings">Order Summary</p>
+          <div class="orderTotal">
+            <!-- Subtotal -->
+            <div>
+              <p>Subtotal</p>
+              <p class="productSubTotal">0</p>
+            </div>
+            <!-- Shipping Fee -->
+            <div>
+              <p>Shipping Fee</p>
+              <p class="productShippingFee">Rs. 150</p>
+            </div>
+            <!-- Vouchers (if any) -->
+            <div class="voucherContainer">
+              <form>
+                <input type="text" placeholder="Enter Voucher Code">
+                <button class="apply-btn">APPLY</button>
+              </form>
+            </div>
+            <hr>
+            <!-- Total Price -->
+            <div>
+              <p>Total</p>
+              <p class="productTotal">0</p>
+            </div>
+            <div class="summary-button">
+              <a href="#" class="checkoutBtn">Proceed To Checkout <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <template id="productCartTemplate">
+    <div class="cards" id="cardValue">
+      <article class="information [card]">
+        <!-- Product Image -->
+        <div class="imageContainer">
+          <img src="" alt="" class="productImage">
+        </div>
+        <!-- Card Typrography -->
+        <div class="cardTypography">
+          <!-- Product Name -->
+          <h3 class="productName"></h3>
+          <!-- Product Price -->
+          <div class="productPriceElement">
+            <p class="productPrice"></p>
+          </div>
+          <!-- Product Quantity Element -->
+          <div class="productQuantityElement">
+            <div class="stockElement">
+              <button class="cartIncreament"><i class="fa-solid fa-plus"></i></button>
+              <p class="productQuantity">1</p>
+              <button class="cartDecreament"><i class="fa-solid fa-minus"></i></button>
+            </div>
+          </div>
+          <!-- Product Cart Button -->
+          <button class="add-to-cart-button remove-to-cart-button">
+            <i class="fa-solid fa-trash"></i>
+            <span>Remove</span>
+          </button>
+        </div>
+      </article>
+    </div>
+  </template>
+  <!-- End Products Cart Section -->
+
+  <!-- Start Footer Section -->
+  <footer id="footer">
+    <div class="container footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="brand">
+          <i class="fa-solid fa-microphone"></i>
+          <span>MicLab</span>
+        </div>
+        <p>Premium music gear for creators. Quality you can trust.</p>
+      </div>
+      <!-- Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Support -->
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© 2025 MicLab. All rights reserved.</p>
+    </div>
+  </footer>
+  <!-- End Footer Section -->
+  <script type="module" src="src/showCartProducts.js"></script>
+</body>
+</html>

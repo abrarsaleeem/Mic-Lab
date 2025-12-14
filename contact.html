@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Contact MicLab - Get in Touch for Support and Sales</title>
+  <meta name="description" content="Contact MicLab for premium music gear inquiries, customer support, or technical help in Pakistan. Find our address and contact details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+  <header>
+    <div class="topbar">
+      <div class="top-container topbar-content">
+        <p>Free shipping. 30-day return or refund guarantee.</p>
+        <div class="topbar-buttons">
+          <a href="cart.html" class="top-btn">Track Order</a>
+          <a href="contact.html" class="top-btn">Support</a>
+        </div>
+      </div>
+    </div>
+
+    <nav class="navbar container">
+      <div class="nav-brand">
+        <i class="fa-solid fa-microphone brand-icon"></i>
+        <a href="index.html" class="brand-name">MicLab</a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="index.html">Home</a></li>
+          <li class="nav-item"><a href="shop.html">Shop</a></li>
+          <li class="nav-item"><a href="about.html">About</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-btn">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="navbarMenu">
+        <div class="nav-cart">
+          <a href="cart.html" class="nav-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+        <div class="mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="mobile-nav-links" id="mobileMenu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html" class="link-active">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="contact-hero" class="page-hero">
+    <div class="container contact-hero-content">
+      <span class="hero-pre">24/7 SUPPORT</span>
+      <h1 class="page-heading">How can we help you?</h1>
+      <p class="page-paragraph">Fill out the form below or use our quick contact info for immediate assistance with orders, returns, or technical questions.</p>
+    </div>
+  </section>
+  <section id="contact-content">
+    <div class="container contact-grid">
+      
+      <div class="contact-details">
+        <div class="detail-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Our Head Office</h4>
+            <p>23/A, Samnabad, Lahore, Pakistan</p>
+          </div>
+        </div>
+        
+        <div class="detail-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email Support</h4>
+            <p>support@miclab.pk</p>
+          </div>
+        </div>
+        
+        <div class="detail-card">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Call Us (Mon-Fri)</h4>
+            <p>+92 3244991145 (9am - 11pm PKR)</p>
+          </div>
+        </div>
+
+        <div class="social-links-contact">
+          <a href="#" aria-label="Follow us on Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Follow us on Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div class="contact-form-box">
+        <form action="https://formspree.io/f/xvgeywwl" method="POST" class="contact-form">
+          <h3>Send us a Message</h3>
+          
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject" required>
+              <option value="" disabled selected>Select a subject</option>
+              <option value="sales">Sales Inquiry</option>
+              <option value="support">Technical Support</option>
+              <option value="returns">Returns & Refunds</option>
+              <option value="other">Other Inquiry</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          
+          <button type="submit" class="hero-btn contact-submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+      
+    </div>
+  </section>
+  <footer id="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <i class="fa-solid fa-microphone"></i>
+          <span>MicLab</span>
+        </div>
+        <p>Premium music gear for creators. Quality you can trust.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Support</h4>
+        <ul>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Returns</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 MicLab. All rights reserved.</p>
+    </div>
+  </footer>
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "MAONO PM-422 USB Condensor Microphone",
+        "price": 21999,
+        "stock": 11,
+        "image": "/images/maono-pm422-mic.png",
+        "type": "microphone"
+    },
+    {
+        "id": 2,
+        "name": "Beyerdynamic DT 990 Pro Studio Headphones",
+        "price": 85000,
+        "stock": 20,
+        "image": "/images/dt-990Pro-headphones.png",
+        "type": "headphone"
+    },
+    {
+        "id": 3,
+        "name": "Audio-Technica AT2020 Condenser Microphone",
+        "price": 34499,
+        "stock": 33,
+        "image": "/images/at2020-mic.png",
+        "type": "microphone"
+    },
+    {
+        "id": 4,
+        "name": "Focusrite Scarlett 2i2 4th Generation",
+        "price": 74999,
+        "stock": 18,
+        "image": "/images/focusrite-audiointerface.png",
+        "type": "interface"
+    },
+    {
+        "id": 5,
+        "name": "KRK ROKIT 7 G5 7″ 2-Way Active Studio Monitor (Pair)",
+        "price": 276000,
+        "stock": 10,
+        "image": "/images/studio-monitor-speaker.png",
+        "type": "monitor"
+    },
+    {
+        "id": 6,
+        "name": "M-Audio Oxygen – 25-Key MIDI Keyboard",
+        "price": 48000,
+        "stock": 29,
+        "image": "/images/m-audio-25keys-midikeyboard.png",
+        "type": "midi"
+    },
+    {
+        "id": 7,
+        "name": "RODE NT1-A Cardioid Condenser Microphone – Silver",
+        "price": 87800,
+        "stock": 21,
+        "image": "/images/rode-nt1A-mic.png",
+        "type": "microphone"
+    },
+    {
+        "id": 8,
+        "name": "Logitech Blue Snowball USB Condenser Microphone",
+        "price": 22499,
+        "stock": 40,
+        "image": "/images/blue-snowball-mic.png",
+        "type": "microphone"
+    }
+]
